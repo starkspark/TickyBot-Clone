@@ -68,13 +68,19 @@ a{
 }
 
 button{
-    height: 15%;
     height: 70px;
-    width: 300px;
+    width: 270px;
     font-size: 150%;
     border-style: none;
     border-radius: 4px;
     margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button img{
+    margin-right: 5%;
 }
 
 button:hover{
@@ -86,6 +92,9 @@ button:hover{
     width: 50%;
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
 }
 
 #about{
@@ -210,4 +219,33 @@ button:hover{
     line-height: 1.8;
     align-self: center;
     text-align: center;
+}
+
+#scrollButton{
+    opacity: .95;
+    float: right;
+    position: fixed;
+    height: 80px;
+    width: 80px;
+    right: 30px;
+    bottom: 25px;
+    z-index: 10;
+    background-color: darkslategrey;
+    background-image:url(images/top.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 75%;
+    background-color: slategray;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
